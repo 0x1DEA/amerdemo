@@ -83,13 +83,13 @@ const nav = [
 const nodeRoute = (node: any, subnode: any = null) => {
     let url = '/';
     if (node.link) url = node.link
-    else if (node.route) url = route(node.route)
+    else if (node.route) url = route(node.route).toString()
 
     if (subnode) {
         if (subnode.link) {
             url += subnode.link
         } else if (subnode.route) {
-            url = route(node.route)
+            url = route(node.route).toString()
         }
     }
 
