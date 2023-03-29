@@ -15,7 +15,7 @@ import { Head } from '@inertiajs/vue3'
                 <div class="absolute p-32 blockgrid left-12 top-[18rem]"></div>
                 <div class="relative flex flex-col md:flex-row items-center w-full justify-between gap-8 !mb-4">
                     <div class="y gap-8 md:w-3/5">
-                        <div class=" y text-white font-bold font-mono text-6xl">
+                        <div class=" y text-white font-bold font-mono text-4xl md:text-6xl">
                             <span>INDUSTRIAL / ENVIRONMENTAL</span>
                             <span class="bg-white text-black w-fit">SERVICES</span>
                         </div>

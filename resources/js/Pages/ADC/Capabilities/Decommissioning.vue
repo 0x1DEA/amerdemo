@@ -15,11 +15,11 @@ import { Head } from '@inertiajs/vue3'
                 <div class="absolute p-32 blockgrid left-12 top-[18rem]"></div>
                 <div class="relative flex flex-col md:flex-row items-center w-full justify-between gap-8 !mb-4">
                     <div class="y gap-8 md:w-3/5">
-                        <div class=" y text-white font-bold font-mono text-6xl">
+                        <div class=" y text-white font-bold font-mono text-4xl md:text-6xl">
                             <span>DEMOLITION &</span>
                             <span class="bg-white text-black w-fit">DECOMMISSIONING</span>
                         </div>
-                        <CoolBox class="max-w-full" title="Solutions That Deliver Results">
+                        <CoolBox class="max-w-full" title="Delivering Results">
                             American Demolition Corporation offers structural, selective and customized demolition, decommissioning, dismantlement and deconstruction services for a wide variety of clients and industries. From single-family homes and multi-story buildings to mega structures and unique installations, no project is too complex or challenging with American Demolition’s expertise, resources and capabilities.
                             <br/>
                             <br/>
