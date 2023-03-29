@@ -20,7 +20,7 @@ import { Head } from '@inertiajs/vue3'
                             <span>DEMOLITION</span>
                             <span class="bg-white text-black w-fit">PROJECTS</span>
                         </div>
-                        <CoolBox class="max-w-full self-end" title="Exceeding Expectations">
+                        <CoolBox class="max-w-full" title="Exceeding Expectations">
                             American Demolition Corporation has partnered with scores of businesses and organizations to successfully complete all types of challenging demolition projects on time and within budget. Our experienced crew has dismantled high-rise buildings in tightly confined city locations, expertly removed contaminated contents and soil from closed processing plants, and selectively demolished structural elements within active hotels without incident or delays. Here are just a few of the many projects we’ve managed and structures we’ve helped transform over the years.
                         </CoolBox>
                         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 text-white w-full">

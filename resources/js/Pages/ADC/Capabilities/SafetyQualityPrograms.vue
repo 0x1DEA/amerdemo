@@ -28,6 +28,9 @@ import { Head } from '@inertiajs/vue3'
                             <br/>
                             American Demolition’s efforts have resulted in an excellent safety record with low incident rates and a consistent record of uninterrupted job-site performance.
                         </CoolBox>
+                        <CoolBox class="max-w-full text-black" title="Quality Assurance">
+                            Along with a strong commitment to safety, American Demolition is equally dedicated to providing unsurpassed project quality and service, not only in the field, but behind the scenes as well. Every American Demolition employee is focused on your needs at all times, managing the process, quickly addressing your specific concerns and requests, watching your project’s bottom line and doing whatever it takes to successfully complete your project to your highest expectations of performance and excellence.
+                        </CoolBox>
                     </div>
                     <div class="y gap-4 text-white md:w-2/5">
                         <h2 class="font-bold text-3xl">Safety Advantages</h2>
@@ -43,9 +46,6 @@ import { Head } from '@inertiajs/vue3'
                             <li>Environmental-safety controls</li>
                             <li>Outstanding safety record</li>
                         </ul>
-                        <CoolBox class="max-w-full text-black" title="Quality Assurance">
-                            Along with a strong commitment to safety, American Demolition is equally dedicated to providing unsurpassed project quality and service, not only in the field, but behind the scenes as well. Every American Demolition employee is focused on your needs at all times, managing the process, quickly addressing your specific concerns and requests, watching your project’s bottom line and doing whatever it takes to successfully complete your project to your highest expectations of performance and excellence.
-                        </CoolBox>
                     </div>
                 </div>
                 <div class="relative flex flex-col md:flex-row items-center w-full justify-between gap-8">
