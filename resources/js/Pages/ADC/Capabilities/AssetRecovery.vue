@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import CoolBox from "../../../components/CoolBox.vue";
+import CoolBox from "../../../Components/CoolBox.vue";
 import Layout from "../../../Layouts/Layout.vue";
 import { Head } from '@inertiajs/vue3'
 

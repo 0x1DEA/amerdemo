@@ -1,7 +1,5 @@
 <script setup lang="ts">
-import CoolBox from "./../../components/CoolBox.vue";
-import hero1 from "./../../../assets/home-rotator-1.jpg";
-import hero2 from "./../../../assets/home-rotator-3.jpg";
+import CoolBox from "../../Components/CoolBox.vue";
 import Layout from "../../Layouts/Layout.vue";
 import { Head } from '@inertiajs/vue3'
 
