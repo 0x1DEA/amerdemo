@@ -22,7 +22,7 @@ import { Head } from '@inertiajs/vue3'
                             <span class="bg-white text-black w-fit">US</span>
                         </div>
                         <CoolBox class="max-w-full" title="Thank You">
-                            Thank you for your interest in American Demolition Corporation. Headquartered in Elgin, Illinois – just 40 minutes from downtown Chicago – American Demolition provides complete demolition services to clients throughout the Midwest and nationwide. If you have any questions, need more information or would like to discuss an upcoming project, please contact us, and a representative will promptly respond to your request or inquiry.
+                            Thank you for your interest in American Demolition Corporation. Headquartered in Carol Stream, Illinois – just 30 minutes from downtown Chicago – American Demolition provides complete demolition services to clients throughout the Midwest and nationwide. If you have any questions, need more information or would like to discuss an upcoming project, please contact us, and a representative will promptly respond to your request or inquiry.
                         </CoolBox>
                     </div>
                     <div class="y gap-4 text-white md:w-1/3">
