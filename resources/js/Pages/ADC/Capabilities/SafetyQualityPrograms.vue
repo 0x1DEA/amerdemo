@@ -2,7 +2,7 @@
 import CoolBox from "../../../Components/CoolBox.vue";
 import Layout from "../../../Layouts/Layout.vue";
 import { Head } from '@inertiajs/vue3'
-
+import conference from "./../../../../assets/conference.jpg";
 </script>
 <template>
     <Layout>
@@ -13,12 +13,18 @@ import { Head } from '@inertiajs/vue3'
             <div class="y relative md:py-8 px-8 space-y-8 w-full lg:max-w-5xl xl:max-w-6xl">
                 <div class="absolute p-20 blockgrid right-12 top-0"></div>
                 <div class="absolute p-32 blockgrid left-12 top-[18rem]"></div>
-                <div class="relative flex flex-col md:flex-row items-center w-full justify-between gap-8 !mb-4">
+                <div class="x justify-between gap-8">
+                    <div class="y text-white font-bold font-mono text-6xl">
+                        <span>SAFETY/</span>
+                        <span>QUALITY</span>
+                        <span class="bg-white text-black w-fit">PROGRAMS</span>
+                    </div>
+                    <div class="mr-3 mb-1" style="filter: drop-shadow(0.75rem 0.25rem #FBBF24);">
+                        <img class="w-[38rem] float-right" :src="conference" alt="Hero" style="clip-path: polygon(0 0,calc(100% - 3rem) 0,100% 3rem,100% 100%,3rem 100%,0 calc(100% - 3rem));"/>
+                    </div>
+                </div>
+                <div class="relative flex flex-col md:flex-row-reverse items-center md:items-start w-full justify-between gap-8 !mb-4">
                     <div class="y gap-8 md:w-3/5">
-                        <div class=" y text-white font-bold font-mono text-6xl">
-                            <span>SAFETY / QUALITY</span>
-                            <span class="bg-white text-black w-fit">PROGRAMS</span>
-                        </div>
                         <CoolBox class="max-w-full" title="Commitment to Safety">
                             At American Demolition Corporation, safety is our top priority at every stage in the demolition process. Advance planning and preparation are paramount. Every project starts with a safety assessment of: the site, structures, working environment, any unusual safety hazards, field-staff input, equipment operations and weather conditions, among other factors. Onsite safety managers constantly monitor conditions and risks to personnel, clients, subcontractors, the public and buildings or collateral in and around the project area.
                             <br/>

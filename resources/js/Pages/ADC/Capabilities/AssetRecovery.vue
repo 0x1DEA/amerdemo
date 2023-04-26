@@ -2,6 +2,7 @@
 import CoolBox from "../../../Components/CoolBox.vue";
 import Layout from "../../../Layouts/Layout.vue";
 import { Head } from '@inertiajs/vue3'
+import warehouse from "./../../../../assets/warehouse.jpg";
 
 </script>
 <template>
@@ -30,6 +31,9 @@ import { Head } from '@inertiajs/vue3'
                         </CoolBox>
                     </div>
                     <div class="y gap-4 text-white md:w-1/3">
+                        <div class="mr-3 mb-1" style="filter: drop-shadow(0.75rem 0.25rem #FBBF24);">
+                            <img class="w-[32rem] float-right" :src="warehouse" alt="Hero" style="clip-path: polygon(0 0,calc(100% - 3rem) 0,100% 3rem,100% 100%,3rem 100%,0 calc(100% - 3rem));"/>
+                        </div>
                         <h2 class="font-bold text-3xl">Recovery Services</h2>
                         <ul class="space-y-2 list-inside list-[square] text-lg">
                             <li>Asset evaluation and recommendations</li>

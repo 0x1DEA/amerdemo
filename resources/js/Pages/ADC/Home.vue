@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import CoolBox from "./../../Components/CoolBox.vue";
-import hero1 from "./../../../assets/warehouse.jpg";
+import hero1 from "./../../../assets/home.jpg";
 import hero2 from "./../../../assets/group.jpg";
 import Layout from "../../Layouts/Layout.vue";
 import { Head } from '@inertiajs/vue3'
