@@ -16,26 +16,26 @@ import { Head } from '@inertiajs/vue3'
                 <div class="absolute p-32 blockgrid left-12 top-[18rem]"></div>
                 <div class="relative y items-center w-full justify-between gap-8 !mb-4">
                     <div class="flex items-center flex-col lg:flex-row w-full lg:justify-between gap-8">
-                        <div class="y text-white font-bold font-mono text-6xl">
+                        <div class="y font-bold font-mono text-6xl">
                             <span>CONTACT</span>
-                            <span class="bg-white text-black w-fit">US</span>
+                            <span class="bg-black text-white w-fit">US</span>
                         </div>
                     </div>
                     <div class="flex flex-col items-center lg:flex-row gap-8 w-full">
-                        <div class="mr-3 mb-1" style="filter: drop-shadow(0.75rem 0.25rem #FBBF24);">
+                        <div class="mr-3 mb-1" style="filter: drop-shadow(0.75rem 0.25rem #3F4443);">
                             <img class="w-[32rem] float-right" :src="hero2" alt="Hero" style="clip-path: polygon(0 0,calc(100% - 3rem) 0,100% 3rem,100% 100%,3rem 100%,0 calc(100% - 3rem));"/>
                         </div>
                         <div class="y space-y-4">
                             <CoolBox class="max-w-full" title="Thank You">
                                 Thank you for your interest in American Demolition Corporation. Headquartered in Carol Stream, Illinois – just 30 minutes from downtown Chicago – American Demolition provides complete demolition services to clients throughout the Midwest and nationwide. If you have any questions, need more information or would like to discuss an upcoming project, please contact us, and a representative will promptly respond to your request or inquiry.
                             </CoolBox>
-                            <div class="y text-white pl-8">
+                            <div class="y pl-8">
                                 <h2 class="font-bold text-3xl">American Demolition Corporation</h2>
-                                <ul class="space-y-2 list-inside list-[square] text-lg">
-                                    <li>480 Randy Rd. Carol Stream, IL 60188</li>
-                                    <li>Phone: 847-608-0010</li>
-                                    <li>Fax: 847-608-0060</li>
-                                    <li>Email: info@amerdemo.com</li>
+                                <ul class="space-y-2 font-mono list-inside list-[square] text-lg">
+                                    <li class="w-full bg-black text-white px-2">480 Randy Rd. Carol Stream, IL 60188</li>
+                                    <li class="w-full bg-black text-white px-2">Phone: 847-608-0010</li>
+                                    <li class="w-full bg-black text-white px-2">Fax: 847-608-0060</li>
+                                    <li class="w-full bg-black text-white px-2">Email: info@amerdemo.com</li>
                                 </ul>
                             </div>
                         </div>

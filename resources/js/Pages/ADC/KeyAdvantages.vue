@@ -15,9 +15,9 @@ import { Head } from '@inertiajs/vue3'
                 <div class="absolute p-32 blockgrid left-12 top-[18rem]"></div>
                 <div class="relative flex flex-col md:flex-row items-center w-full justify-between gap-8 !mb-4">
                     <div class="y gap-8 md:w-2/3">
-                        <div class=" y text-white font-bold font-mono text-6xl">
+                        <div class=" y font-bold font-mono text-6xl">
                             <span>KEY</span>
-                            <span class="bg-white text-black w-fit">ADVANTAGES</span>
+                            <span class="bg-black text-white w-fit">ADVANTAGES</span>
                         </div>
                         <CoolBox class="max-w-full" title="Reliable Partnership">
                             From accurately estimating project costs and efficiently managing job-site activities, to closely controlling project deadlines and setting high safety standards, American Demolition Corporation has built a reputation for providing dependable, solutions-driven demolition services.
@@ -32,7 +32,7 @@ import { Head } from '@inertiajs/vue3'
                             As your trusted demolition partner, you can expect your demolition project to be completed in a responsible, sustainable and safe manner throughout the entire demolition process.
                         </CoolBox>
                     </div>
-                    <div class="y gap-4 text-white md:w-1/3">
+                    <div class="y gap-4 md:w-1/3">
                         <h2 class="font-bold text-3xl">What We Offer</h2>
                         <ul class="space-y-2 list-inside list-[square] text-lg">
                             <li>Full-service resources</li>

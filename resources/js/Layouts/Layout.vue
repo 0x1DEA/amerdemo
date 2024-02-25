@@ -4,17 +4,17 @@ import Header from "../Components/Header.vue";
 import Footer from "../Components/Footer.vue";
 </script>
 <template>
-    <div class="y overflow-hidden min-h-screen max-w-screen bg-neutral-900">
+    <div class="y overflow-hidden min-h-screen max-w-screen bg-white dotgrid">
         <Header/>
         <NavBar/>
         <slot/>
         <Footer/>
     </div>
 </template>
-<style scoped>
-.blockgrid {
-    background-image: linear-gradient(to right, #171717 70%, transparent 70%), linear-gradient(to bottom, grey 30%, #171717 30%);
-    background-size: 20px 20px;
-    background-position: -5px -10px;
+<style>
+.dotgrid {
+    background-image: radial-gradient(#D7D9D2 1.1px, white 0);
+    background-size: 17px 17px;
+    background-position: -16px -20px;
 }
 </style>

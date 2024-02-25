@@ -99,7 +99,7 @@ const nodeRoute = (node: any, subnode: any = null) => {
 const open = ref(false);
 </script>
 <template>
-    <div class="flex flex-col md:flex-row justify-center w-full bg-amber-400">
+    <div class="flex flex-col md:flex-row justify-center w-full bg-pt-6183 text-white border-b border-pt-466">
         <div class="flex md:hidden items-center justify-between w-full px-4 py-4">
             <div class="cursor-pointer" @click="open = !open">
                 <svg v-show="open" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
@@ -110,33 +110,33 @@ const open = ref(false);
                 </svg>
             </div>
         </div>
-        <div v-show="open" class="flex flex-col md:hidden w-full items-center divide-y divide-neutral-900 border-t border-neutral-900">
+        <div v-show="open" class="flex flex-col md:hidden w-full items-center divide-y divide-pt-6200 border-t border-pt-466">
             <template v-for="(node, index) in nav" :key="index">
                 <NavLink class="w-full" :href="nodeRoute(node)">{{ node.title }}</NavLink>
-                <DropdownLink class="bg-amber-200" v-for="(subnode, subindex) in node.children" :key="subindex" :href="nodeRoute(node, subnode)">{{ subnode.title }}</DropdownLink>
+                <DropdownLink class="bg-pt-3517" v-for="(subnode, subindex) in node.children" :key="subindex" :href="nodeRoute(node, subnode)">{{ subnode.title }}</DropdownLink>
             </template>
         </div>
         <div class="hidden md:flex justify-between w-full lg:max-w-5xl xl:max-w-6xl">
-            <div class="x items-center divide-x divide-neutral-900 border-x border-neutral-900">
+            <div class="x items-stretch divide-x divide-pt-466 border-x border-pt-466">
                 <template v-for="(node, index) in nav" :key="index">
-                    <Dropdown v-if="node.hasOwnProperty('children')">
-                        <NavLink :href="nodeRoute(node)">{{ node.title }}</NavLink>
+                    <Dropdown class="flex items-stretch" v-if="node.hasOwnProperty('children')">
+                        <NavLink class="" :href="nodeRoute(node)">{{ node.title }}</NavLink>
                         <template #contents>
                             <DropdownLink v-for="(subnode, subindex) in node.children" :key="subindex" :href="nodeRoute(node, subnode)">{{ subnode.title }}</DropdownLink>
                         </template>
                     </Dropdown>
-                    <NavLink v-else :href="nodeRoute(node)">{{ node.title }}</NavLink>
+                    <NavLink class="block" v-else :href="nodeRoute(node)">{{ node.title }}</NavLink>
                 </template>
             </div>
-            <div class="x ml-4 border-y-2 border-amber-400">
-                <div class="border-[1.4rem] aspect-square border-transparent border-r-neutral-800 border-t-neutral-800"></div>
-                <div class="border-[1.4rem] aspect-square border-transparent border-l-neutral-800 border-b-neutral-800"></div>
-                <div class="border-[1.4rem] aspect-square border-transparent border-r-neutral-800 border-t-neutral-800"></div>
-                <div class="border-[1.4rem] aspect-square border-transparent border-l-neutral-800 border-b-neutral-800"></div>
-                <div class="border-[1.4rem] aspect-square border-transparent border-r-neutral-800 border-t-neutral-800"></div>
-                <div class="border-[1.4rem] aspect-square border-transparent border-l-neutral-800 border-b-neutral-800"></div>
-                <div class="border-[1.4rem] aspect-square border-transparent border-r-neutral-800 border-t-neutral-800"></div>
-                <div class="border-[1.4rem] aspect-square border-transparent border-l-neutral-800 border-b-neutral-800"></div>
+            <div class="x ml-4 border-y-2 border-pt-6183">
+                <div class="border-[1.4rem] aspect-square border-transparent border-r-pt-466 border-t-pt-466"></div>
+                <div class="border-[1.4rem] aspect-square border-transparent border-l-pt-466 border-b-pt-466"></div>
+                <div class="border-[1.4rem] aspect-square border-transparent border-r-pt-466 border-t-pt-466"></div>
+                <div class="border-[1.4rem] aspect-square border-transparent border-l-pt-466 border-b-pt-466"></div>
+                <div class="border-[1.4rem] aspect-square border-transparent border-r-pt-466 border-t-pt-466"></div>
+                <div class="border-[1.4rem] aspect-square border-transparent border-l-pt-466 border-b-pt-466"></div>
+                <div class="border-[1.4rem] aspect-square border-transparent border-r-pt-466 border-t-pt-466"></div>
+                <div class="border-[1.4rem] aspect-square border-transparent border-l-pt-466 border-b-pt-466"></div>
             </div>
         </div>
     </div>

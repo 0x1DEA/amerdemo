@@ -1,5 +1,5 @@
 <template>
-  <div class="x dotgrid justify-center w-full bg-neutral-900 text-white py-4 border-t-4 border-amber-400">
+  <div class="x justify-center w-full bg-pt-466 font-mono text-sm text-white py-4 border-t-4 border-pt-6183">
     <div class="flex flex-col md:flex-row items-center justify-center md:gap-8 w-full lg:max-w-5xl xl:max-w-6xl gap-2 py-2 px-4">
       <div class="x space-x-2">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5">
@@ -23,10 +23,3 @@
     </div>
   </div>
 </template>
-<style scoped>
-.dotgrid {
-  background-image: radial-gradient(#404040 1px, transparent 0);
-  background-size: 17px 17px;
-  background-position: -16px -20px;
-}
-</style>
