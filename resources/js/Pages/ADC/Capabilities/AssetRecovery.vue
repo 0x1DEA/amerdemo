@@ -16,9 +16,9 @@ import warehouse from "./../../../../assets/warehouse.jpg";
                 <div class="absolute p-32 blockgrid left-12 top-[18rem]"></div>
                 <div class="relative flex flex-col md:flex-row items-center w-full justify-between gap-8 !mb-4">
                     <div class="y gap-8 md:w-2/3">
-                        <div class=" y text-white font-bold font-mono text-6xl">
+                        <div class=" y font-bold font-mono text-6xl">
                             <span>ASSET</span>
-                            <span class="bg-white text-black w-fit">RECOVERY</span>
+                            <span class="bg-black text-white w-fit">RECOVERY</span>
                         </div>
                         <CoolBox class="max-w-full" title="A Return On Investment">
                             American Demolition Corporation’s asset recovery services maximize the value and investment return of recovered, reusable and recycled scrap, building materials and content components to offset the expense of a demolition project.

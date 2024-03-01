@@ -99,7 +99,7 @@ const nodeRoute = (node: any, subnode: any = null) => {
 const open = ref(false);
 </script>
 <template>
-    <div class="flex flex-col md:flex-row justify-center w-full bg-pt-6183 text-white border-b border-pt-466">
+    <div class="flex flex-col md:flex-row justify-center w-full text-white bg-pt-466 text-pt-6200 border-pt-466">
         <div class="flex md:hidden items-center justify-between w-full px-4 py-4">
             <div class="cursor-pointer" @click="open = !open">
                 <svg v-show="open" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
@@ -117,26 +117,26 @@ const open = ref(false);
             </template>
         </div>
         <div class="hidden md:flex justify-between w-full lg:max-w-5xl xl:max-w-6xl">
-            <div class="x items-stretch divide-x divide-pt-466 border-x border-pt-466">
+            <div class="x space-x-4 items-stretch">
                 <template v-for="(node, index) in nav" :key="index">
                     <Dropdown class="flex items-stretch" v-if="node.hasOwnProperty('children')">
-                        <NavLink class="" :href="nodeRoute(node)">{{ node.title }}</NavLink>
+                        <NavLink class="block bg-pt-466" :href="nodeRoute(node)">{{ node.title }}</NavLink>
                         <template #contents>
                             <DropdownLink v-for="(subnode, subindex) in node.children" :key="subindex" :href="nodeRoute(node, subnode)">{{ subnode.title }}</DropdownLink>
                         </template>
                     </Dropdown>
-                    <NavLink class="block" v-else :href="nodeRoute(node)">{{ node.title }}</NavLink>
+                    <NavLink class="block bg-pt-466" v-else :href="nodeRoute(node)">{{ node.title }}</NavLink>
                 </template>
             </div>
-            <div class="x ml-4 border-y-2 border-pt-6183">
-                <div class="border-[1.4rem] aspect-square border-transparent border-r-pt-466 border-t-pt-466"></div>
-                <div class="border-[1.4rem] aspect-square border-transparent border-l-pt-466 border-b-pt-466"></div>
-                <div class="border-[1.4rem] aspect-square border-transparent border-r-pt-466 border-t-pt-466"></div>
-                <div class="border-[1.4rem] aspect-square border-transparent border-l-pt-466 border-b-pt-466"></div>
-                <div class="border-[1.4rem] aspect-square border-transparent border-r-pt-466 border-t-pt-466"></div>
-                <div class="border-[1.4rem] aspect-square border-transparent border-l-pt-466 border-b-pt-466"></div>
-                <div class="border-[1.4rem] aspect-square border-transparent border-r-pt-466 border-t-pt-466"></div>
-                <div class="border-[1.4rem] aspect-square border-transparent border-l-pt-466 border-b-pt-466"></div>
+            <div v-if="false" class="x ml-4 border-y-2 border-pt-466">
+                <div class="border-[1.4rem] aspect-square border-transparent border-r-pt-6183 border-t-pt-6183"></div>
+                <div class="border-[1.4rem] aspect-square border-transparent border-l-pt-6183 border-b-pt-6183"></div>
+                <div class="border-[1.4rem] aspect-square border-transparent border-r-pt-6183 border-t-pt-6183"></div>
+                <div class="border-[1.4rem] aspect-square border-transparent border-l-pt-6183 border-b-pt-6183"></div>
+                <div class="border-[1.4rem] aspect-square border-transparent border-r-pt-6183 border-t-pt-6183"></div>
+                <div class="border-[1.4rem] aspect-square border-transparent border-l-pt-6183 border-b-pt-6183"></div>
+                <div class="border-[1.4rem] aspect-square border-transparent border-r-pt-6183 border-t-pt-6183"></div>
+                <div class="border-[1.4rem] aspect-square border-transparent border-l-pt-6183 border-b-pt-6183"></div>
             </div>
         </div>
     </div>

@@ -3,16 +3,16 @@ import logo from "./../../assets/adlogomark.svg"
 import logo_text from "./../../assets/adlogotext.svg"
 </script>
 <template>
-  <div class="x justify-center w-full bg-pt-466 text-white py-4">
+  <div class="x justify-center w-full bg-pt-6200 text-white py-0">
     <div class="x items-center justify-center md:justify-between w-full lg:max-w-5xl xl:max-w-6xl gap-2 py-2 px-4">
       <div class="x px-4 space-x-4 items-center rounded">
           <svg class="w-auto h-16 fill-white" viewBox="0 0 425 156" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" >
             <g transform="matrix(1,0,0,1,-87.5,-222.256)">
-                <path d="M182.3,269.1L182.3,339L228.3,339L264.2,377.8L123.4,377.8L87.5,339L131.4,339L131.4,261.1L87.5,261.1L123.1,222.3L191.4,222.3C201.1,222.3 210.5,226 217.6,232.5C218.3,233.2 352.4,377.8 352.4,377.8L282.5,377.8L182.3,269.1Z"/>
-                <path d="M503.3,306.8L436.5,234.8C429.9,227.8 420.9,223.1 411.4,222.3C410.3,222.2 226.2,222.3 226.2,222.3C227.9,223.6 229.6,225.3 231.1,226.9L371.1,377.7L480.8,377.7L503.3,353.4C509.4,346.8 512.5,338.4 512.5,330.1C512.5,321.8 509.4,313.4 503.3,306.8ZM436.4,334.6L398.7,334.6L334.8,265.7L381.1,265.7C389.5,265.7 397.6,268.1 403.5,274.3L443.6,317.7C449.5,324 445.1,334.6 436.4,334.6Z"/>
+                <path class="fill-pt-3517" d="M182.3,269.1L182.3,339L228.3,339L264.2,377.8L123.4,377.8L87.5,339L131.4,339L131.4,261.1L87.5,261.1L123.1,222.3L191.4,222.3C201.1,222.3 210.5,226 217.6,232.5C218.3,233.2 352.4,377.8 352.4,377.8L282.5,377.8L182.3,269.1Z"/>
+                <path class="fill-pt-466" d="M503.3,306.8L436.5,234.8C429.9,227.8 420.9,223.1 411.4,222.3C410.3,222.2 226.2,222.3 226.2,222.3C227.9,223.6 229.6,225.3 231.1,226.9L371.1,377.7L480.8,377.7L503.3,353.4C509.4,346.8 512.5,338.4 512.5,330.1C512.5,321.8 509.4,313.4 503.3,306.8ZM436.4,334.6L398.7,334.6L334.8,265.7L381.1,265.7C389.5,265.7 397.6,268.1 403.5,274.3L443.6,317.7C449.5,324 445.1,334.6 436.4,334.6Z"/>
             </g>
           </svg>
-          <svg class="w-auto h-16 fill-white" viewBox="0 0 600 188" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+          <svg class="w-auto h-16 fill-pt-466" viewBox="0 0 600 188" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
             <g transform="matrix(1,0,0,1,0,-267)">
                 <g>
                     <path d="M82.9,270.5L41.9,270.5L51.5,280.8L30.6,350.1L52.5,350.1L56.8,333.7L80.3,333.7L84.5,350.1L107.3,350.1L82.9,270.5ZM61,316.6L68.5,287.8L75.9,316.6L61,316.6Z"/>
@@ -40,7 +40,7 @@ import logo_text from "./../../assets/adlogotext.svg"
             </g>
         </svg>
       </div>
-      <div class="hidden font-mono text-sm md:flex flex-col items-end bg-pt-466 px-4 py-2 rounded space-y-1">
+      <div class="hidden font-mono text-pt-466 md:flex flex-col items-end px-4 py-2 rounded space-y-1">
         <div class="x items-center gap-2">
           <a href="tel:+18476080010" class="hover:underline">+1 (847) 608-0010</a>
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5">

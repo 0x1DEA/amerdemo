@@ -14,10 +14,10 @@ import conference from "./../../../../assets/conference.jpg";
                 <div class="absolute p-20 blockgrid right-12 top-0"></div>
                 <div class="absolute p-32 blockgrid left-12 top-[18rem]"></div>
                 <div class="x justify-between gap-8">
-                    <div class="y text-white font-bold font-mono text-6xl">
+                    <div class="y font-bold font-mono text-6xl">
                         <span>SAFETY/</span>
                         <span>QUALITY</span>
-                        <span class="bg-white text-black w-fit">PROGRAMS</span>
+                        <span class="bg-black text-white w-fit">PROGRAMS</span>
                     </div>
                     <div class="mr-3 mb-1" style="filter: drop-shadow(0.75rem 0.25rem #FBBF24);">
                         <img class="w-[38rem] float-right" :src="conference" alt="Hero" style="clip-path: polygon(0 0,calc(100% - 3rem) 0,100% 3rem,100% 100%,3rem 100%,0 calc(100% - 3rem));"/>
@@ -38,7 +38,7 @@ import conference from "./../../../../assets/conference.jpg";
                             Along with a strong commitment to safety, American Demolition is equally dedicated to providing unsurpassed project quality and service, not only in the field, but behind the scenes as well. Every American Demolition employee is focused on your needs at all times, managing the process, quickly addressing your specific concerns and requests, watching your project’s bottom line and doing whatever it takes to successfully complete your project to your highest expectations of performance and excellence.
                         </CoolBox>
                     </div>
-                    <div class="y gap-4 text-white md:w-2/5">
+                    <div class="y gap-4 md:w-2/5">
                         <h2 class="font-bold text-3xl">Safety Advantages</h2>
                         <ul class="space-y-2 list-inside list-[square] text-lg">
                             <li>Full-time safety director</li>

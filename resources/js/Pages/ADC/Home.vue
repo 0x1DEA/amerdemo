@@ -2,6 +2,7 @@
 import CoolBox from "./../../Components/CoolBox.vue";
 import hero1 from "./../../../assets/home.jpg";
 import hero2 from "./../../../assets/group.jpg";
+import hero3 from "./../../../assets/industrial.jpg";
 import Layout from "../../Layouts/Layout.vue";
 import { Head } from '@inertiajs/vue3'
 
@@ -12,32 +13,44 @@ import { Head } from '@inertiajs/vue3'
             <title>Home</title>
         </Head>
         <main class="y items-center grow">
-            <div class="y relative md:py-16 px-8 space-y-8 w-full lg:max-w-5xl xl:max-w-6xl">
-                <div class="absolute p-20 blockgrid right-12 top-0"></div>
-                <div class="absolute p-32 blockgrid left-12 top-[18rem]"></div>
-                <div class="relative flex flex-col md:flex-row w-full justify-between gap-8">
-                    <div class="y gap-8">
-                        <div class="y font-bold font-mono text-6xl mt-4">
-                            <span>AMERICAN</span>
-                            <span class="bg-black text-white w-fit">DEMOLITION</span>
+            <div class="y w-full">
+                <div class="bg-center bg-cover h-[calc(100vh-9rem)]" :style="`background-image: url(${ hero1 });`">
+                    <div class="flex flex-col justify-center items-center h-full md:flex-row w-full gap-8 p-8 bg-black/75">
+                        <div class="y space-y-4 w-full lg:max-w-5xl xl:max-w-6xl">
+                            <div class="y text-white font-bold font-mono text-6xl mt-4">
+                                <span>AMERICAN</span>
+                                <span class="w-fit">DEMOLITION</span>
+                            </div>
+                            <CoolBox title="Start To Finish">
+                                American Demolition Corporation is focused on your complete satisfaction. Whether your project is large or small, we strive to provide the highest level of service possible in completing projects on time, within budget and without surprises or complications.
+                            </CoolBox>
                         </div>
-                        <CoolBox title="Start To Finish">
-                            American Demolition Corporation is focused on your complete satisfaction. Whether your project is large or small, we strive to provide the highest level of service possible in completing projects on time, within budget and without surprises or complications.
-                        </CoolBox>
-                    </div>
-                    <div class="mr-3 mb-1" style="filter: drop-shadow(0.75rem 0.25rem #798772);">
-                        <img class="w-[32rem] float-right" :src="hero1" alt="" style="clip-path: polygon(0 0,calc(100% - 3rem) 0,100% 3rem,100% 100%,3rem 100%,0 calc(100% - 3rem));"/>
                     </div>
                 </div>
-                <div class="relative flex flex-col-reverse md:flex-row w-full justify-between gap-8 !mt-16 !mb-4">
-                    <div class="mr-3 mb-1" style="filter: drop-shadow(0.75rem 0.25rem #798772);">
-                        <img class="w-[32rem] float-right" :src="hero2" alt="Hero" style="clip-path: polygon(0 0,calc(100% - 3rem) 0,100% 3rem,100% 100%,3rem 100%,0 calc(100% - 3rem));"/>
+                <div class="bg-cover py-[20rem] relative" :style="`background-image: url(${ hero2 });background-position:center 15%;`">
+                    <div class="flex items-end p-8 justify-center bg-black/25 absolute inset-0">
+                        <h1 v-if="false" class="font-bold text-6xl text-white bg-black/50 p-4 w-fit">Big Title</h1>
                     </div>
-                    <CoolBox title="About Us">
-                        American Demolition Corporation  is one of the Midwest’s leading demolition and environmental remediation companies with the proven professionalism, experience, resources and knowledge to successfully manage all types of building, structure or facility projects. Since 1989, we’ve helped private businesses, public institutions and government agencies nationwide “break into the future” by maximizing their asset potential.
-                        <br/>
-                        American Demolition Corporation offers proven capabilities encompassing all aspects in the dismantling of structures and facilities, including total and selective demolition, decommissioning, specialized industrial services, environmental remediation, safety management and asset recovery.
-                    </CoolBox>
+                </div>
+                <div class="bg-cover" :style="`background-image: url(${ hero3 });background-position:center 15%;`">
+                    <div class="items-center py-12 flex flex-col-reverse md:flex-row w-full justify-center bg-black/50 h-full">
+                        <div class="x space-x-4 w-full items-center justify-between lg:max-w-5xl xl:max-w-6xl">
+                            <CoolBox title="About Us">
+                                American Demolition Corporation  is one of the Midwest’s leading demolition and environmental remediation companies with the proven professionalism, experience, resources and knowledge to successfully manage all types of building, structure or facility projects. Since 1989, we’ve helped private businesses, public institutions and government agencies nationwide “break into the future” by maximizing their asset potential.
+                                <br/>
+                                American Demolition Corporation offers proven capabilities encompassing all aspects in the dismantling of structures and facilities, including total and selective demolition, decommissioning, specialized industrial services, environmental remediation, safety management and asset recovery.
+                            </CoolBox>
+                            <div>
+                                <h2 class="font-bold text-white text-3xl">American Demolition Corporation</h2>
+                                <ul class="space-y-2 font-mono list-inside text-lg">
+                                    <li class="w-full bg-black/50 text-white px-2">480 Randy Rd. Carol Stream, IL 60188</li>
+                                    <li class="w-full bg-black/50 text-white px-2">Phone: 847-608-0010</li>
+                                    <li class="w-full bg-black/50 text-white px-2">Fax: 847-608-0060</li>
+                                    <li class="w-full bg-black/50 text-white px-2">Email: info@amerdemo.com</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </main>

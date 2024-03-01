@@ -15,9 +15,9 @@ import { Head } from '@inertiajs/vue3'
                 <div class="absolute p-32 blockgrid left-12 top-[18rem]"></div>
                 <div class="relative flex flex-col md:flex-row items-center w-full justify-between gap-8 !mb-4">
                     <div class="y gap-8 md:w-3/5">
-                        <div class=" y text-white font-bold font-mono text-4xl md:text-6xl">
+                        <div class=" y font-bold font-mono text-4xl md:text-6xl">
                             <span>DEMOLITION &</span>
-                            <span class="bg-white text-black w-fit">DECOMMISSIONING</span>
+                            <span class="bg-black text-white w-fit">DECOMMISSIONING</span>
                         </div>
                         <CoolBox class="max-w-full" title="Delivering Results">
                             American Demolition Corporation offers structural, selective and customized demolition, decommissioning, dismantlement and deconstruction services for a wide variety of clients and industries. From single-family homes and multi-story buildings to mega structures and unique installations, no project is too complex or challenging with American Demolition’s expertise, resources and capabilities.
@@ -29,7 +29,7 @@ import { Head } from '@inertiajs/vue3'
                             American Demolition customizes every service option to fit your exact needs and recommends leading-edge strategies to ensure the ultimate success of your project. We continually enhance our machinery and modify our techniques to reflect the most advanced demolition concepts and equipment currently in practice.
                         </CoolBox>
                     </div>
-                    <div class="y gap-4 text-white md:w-2/5">
+                    <div class="y gap-4 md:w-2/5">
                         <h2 class="font-bold text-3xl">Industry-Specific Projects</h2>
                         <ul class="space-y-2 list-inside list-[square] text-lg">
                             <li><b>Industrial:</b> Power Plants, Paper Mills, Coal Mines,Tank Removal, Transformers, Silo Bins, Stacks/Chimneys</li>

@@ -19,7 +19,58 @@ use Inertia\Inertia;
 Route::inertia('/', 'ADC/Home');
 Route::inertia('/about', 'ADC/About');
 Route::inertia('/contact', 'ADC/Contact');
-Route::inertia('/projects', 'ADC/Projects');
+
+Route::get('/projects', function () {
+    $projects = \App\Models\Project::all();
+
+    $p = [];
+
+    $projects->map(function ($v) use (&$p) {
+        $c = $v->category;
+        if (!array_key_exists($c, $p)) {
+            $p[$c] = [];
+        }
+
+        $p[$c][] = $v;
+    });
+
+    return Inertia::render('ADC/Projects', [
+        'projects' => $p
+    ]);
+});
+
+Route::get('/project/{project:slug}', function (\App\Models\Project $project) {
+    return Inertia::render('ADC/Project', [
+        'project' => $project
+    ]);
+});
+
+Route::get('/projects/new', function () {
+    return Inertia::render('ADC/Projects/Create');
+});
+
+Route::post('/projects/new', function (\Illuminate\Http\Request $request) {
+    $request->validate([
+        'name' => ['required'],
+        'slug' => ['required'],
+    ]);
+
+    $project = new \App\Models\Project();
+    $project->name = $request->string('name');
+    $project->slug = $request->string('slug');
+    $project->location = $request->string('location');
+    $project->category = $request->string('category');
+    $project->content = $request->string('content');
+    $project->save();
+
+    return redirect('/project/' . $project->slug);
+});
+
+Route::get('/blog/{post:slug}', function (\App\Models\Post $post) {
+    return Inertia::render('ADC/Post', [
+        'post' => $post
+    ]);
+});
 
 Route::prefix('capabilities')->group(function () {
     Route::inertia('/', '');
