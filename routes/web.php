@@ -115,6 +115,12 @@ Route::post('/contact/send', function (\Illuminate\Http\Request $request) {
     $i->email = $request->string('email');
     $i->message = $request->string('message');
     $i->save();
+
+    return back();
+});
+
+Route::get('/inqs', function () {
+    return \App\Models\Inquiry::all();
 });
 
 require __DIR__.'/auth.php';
