@@ -25,14 +25,15 @@ const props = defineProps({
                             </div>
                         </div>
                         <div class="flex flex-col space-y-4 w-full">
-                            <div v-for="(category, key) in projects" class="text-pt-6197 bg-pt-466 px-6 py-4 border-l-[0.5rem] border-pt-3517">
-                                <h2 class="font-bold text-2xl capitalize">{{ key }}</h2>
-                                <ul>
-                                    <li v-for="project in category" class="flex flex-col">
-                                        <span>{{ project.name }}</span>
+                            <div v-for="(category, key) in projects">
+                                <h2 class="font-bold text-4xl capitalize">{{ key }}</h2>
+                                <div class="y space-y-2 text-pt-6197">
+                                    <!-- :href="`/project/${project.slug}`" -->
+                                    <a v-for="project in category" class="flex flex-col bg-pt-466 px-6 py-4 border-l-[0.5rem] hover:border-l-[1rem] transition-[border] border-pt-3517">
+                                        <span class="font-bold text-2xl capitalize">{{ project.name }}</span>
                                         <span>{{ project.location }}</span>
-                                    </li>
-                                </ul>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
