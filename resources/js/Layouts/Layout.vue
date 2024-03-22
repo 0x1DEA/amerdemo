@@ -6,7 +6,7 @@ import Footer from "../Components/Footer.vue";
 import hero2 from "./../../assets/group.jpg";
 </script>
 <template>
-    <div class="y overflow-hidden min-h-screen max-w-screen">
+    <div class="y relative overflow-hidden min-h-screen max-w-screen">
         <Header/>
         <NavBar/>
         <div class="y grow">

@@ -17,7 +17,7 @@ import { Head } from '@inertiajs/vue3'
                     <div class="y gap-8 md:w-3/5">
                         <div class=" y font-bold font-mono text-4xl md:text-6xl">
                             <span>DEMOLITION &</span>
-                            <span class="bg-black text-white w-fit">DECOMMISSIONING</span>
+                            <span>DECOMMISSIONING</span>
                         </div>
                         <CoolBox class="max-w-full" title="Delivering Results">
                             American Demolition Corporation offers structural, selective and customized demolition, decommissioning, dismantlement and deconstruction services for a wide variety of clients and industries. From single-family homes and multi-story buildings to mega structures and unique installations, no project is too complex or challenging with American Demolition’s expertise, resources and capabilities.

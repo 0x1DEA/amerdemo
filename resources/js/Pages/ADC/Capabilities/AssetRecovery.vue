@@ -11,7 +11,7 @@ import warehouse from "./../../../../assets/warehouse.jpg";
             <title>Asset Recovery</title>
         </Head>
         <main class="y items-center grow">
-            <div class="y items-center relative w-full bg-cover bg-center" :style="`background-image:url(${warehouse});`">
+            <div class="y items-center relative w-full bg-cover bg-center grow" :style="`background-image:url(${warehouse});`">
                 <div class="absolute inset-0 bg-black/75"></div>
                 <div class="z-10 w-full lg:max-w-5xl xl:max-w-6xl flex flex-col md:flex-row items-center w-full justify-between gap-8 !mb-4">
                     <div class="y gap-8 md:w-2/3 p-8">

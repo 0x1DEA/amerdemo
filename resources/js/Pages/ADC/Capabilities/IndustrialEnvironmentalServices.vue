@@ -19,7 +19,7 @@ import industrial from "./../../../../assets/industrial.jpg";
                     <div class="y gap-8 md:w-3/5">
                         <div class=" y font-bold font-mono text-4xl md:text-6xl">
                             <span>INDUSTRIAL / ENVIRONMENTAL</span>
-                            <span class="bg-black text-white w-fit">SERVICES</span>
+                            <span>SERVICES</span>
                         </div>
                         <CoolBox class="max-w-full" title="Material Recycling">
                             American Demolition Corporation offers a sustainable approach to structural demolition that best serves our clients and the environment. By processing and recycling reusable materials onsite, such as concrete, asphalt and stone, American Demolition can supply building aggregate, road base or fill material for new construction. This eco-friendly solution reduces client costs for removing waste and acquiring new materials while minimizing a project’s environmental impact.

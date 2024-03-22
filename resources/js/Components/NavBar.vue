@@ -99,7 +99,7 @@ const nodeRoute = (node: any, subnode: any = null) => {
 const open = ref(false);
 </script>
 <template>
-    <div class="flex flex-col md:flex-row justify-center w-full text-white bg-pt-466 text-pt-6200 border-pt-466">
+    <div class="relative z-50 flex flex-col md:flex-row justify-center w-full text-white bg-pt-466 text-pt-6200 border-pt-466">
         <div class="flex md:hidden items-center justify-between w-full px-4 py-4">
             <div class="cursor-pointer" @click="open = !open">
                 <svg v-show="open" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
