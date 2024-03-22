@@ -18,7 +18,7 @@ import { Head } from '@inertiajs/vue3'
                         <div class=" y font-bold font-mono text-6xl">
                             <span>OUR</span>
                             <span>COMPANY</span>
-                            <span class="bg-black text-white w-fit">PROFILE</span>
+                            <span>PROFILE</span>
                         </div>
                         <CoolBox class="max-w-full" title="About Us">
                             American Demolition Corporation  is one of the Midwest’s leading demolition and environmental remediation companies with the proven professionalism, experience, resources and knowledge to successfully manage all types of building, structure or facility projects. Since 1989, we’ve helped private businesses, public institutions and government agencies nationwide “break into the future” by maximizing their asset potential.

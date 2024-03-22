@@ -101,4 +101,20 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
+Route::post('/contact/send', function (\Illuminate\Http\Request $request) {
+    $data = $request->validate([
+        'name' => ['required'],
+        'phone' => ['required'],
+        'email' => ['required'],
+        'message' => ['required'],
+    ]);
+
+    $i = new \App\Models\Inquiry();
+    $i->name = $request->string('name');
+    $i->phone = $request->string('phone');
+    $i->email = $request->string('email');
+    $i->message = $request->string('message');
+    $i->save();
+});
+
 require __DIR__.'/auth.php';

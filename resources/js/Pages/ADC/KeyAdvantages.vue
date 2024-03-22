@@ -17,7 +17,7 @@ import { Head } from '@inertiajs/vue3'
                     <div class="y gap-8 md:w-2/3">
                         <div class=" y font-bold font-mono text-6xl">
                             <span>KEY</span>
-                            <span class="bg-black text-white w-fit">ADVANTAGES</span>
+                            <span>ADVANTAGES</span>
                         </div>
                         <CoolBox class="max-w-full" title="Reliable Partnership">
                             From accurately estimating project costs and efficiently managing job-site activities, to closely controlling project deadlines and setting high safety standards, American Demolition Corporation has built a reputation for providing dependable, solutions-driven demolition services.
