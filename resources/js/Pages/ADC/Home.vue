@@ -34,7 +34,7 @@ import { Head } from '@inertiajs/vue3'
                 </div>
                 <div class="bg-cover" :style="`background-image: url(${ hero3 });background-position:center 15%;`">
                     <div class="items-center py-12 flex flex-col-reverse md:flex-row w-full justify-center bg-black/50 h-full">
-                        <div class="x space-x-4 w-full items-center justify-between lg:max-w-5xl xl:max-w-6xl">
+                        <div class="y lg:flex-row gap-4 p-2 w-full items-center justify-between lg:max-w-5xl xl:max-w-6xl">
                             <CoolBox title="About Us">
                                 American Demolition Corporation  is one of the Midwest’s leading demolition and environmental remediation companies with the proven professionalism, experience, resources and knowledge to successfully manage all types of building, structure or facility projects. Since 1989, we’ve helped private businesses, public institutions and government agencies nationwide “break into the future” by maximizing their asset potential.
                                 <br/>

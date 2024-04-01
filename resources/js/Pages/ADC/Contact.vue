@@ -22,7 +22,7 @@ const submit = () => {
         </Head>
         <main class="y items-center grow bg-cover bg-center" :style="`background-image: url(${ hero2 });`">
             <div class="y w-full bg-black/50 grow justify-center items-center">
-                <div class="relative x items-center w-full lg:max-w-5xl xl:max-w-6xl justify-between space-x-2 !mb-4">
+                <div class="relative y lg:flex-col items-center p-2 w-full lg:max-w-5xl xl:max-w-6xl justify-between space-x-2 !mb-4">
                     <form @submit.prevent="submit" class="y relative w-1/2 space-y-2 p-4 bg-black/50 w-full lg:max-w-5xl xl:max-w-6xl">
                         <h2 class="font-bold text-4xl text-white">Contact Us</h2>
                         <div :class="{'invisible': !form.wasSuccessful}" class="x items-center justify-center absolute inset-0 text-green-400">

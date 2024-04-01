@@ -4,6 +4,8 @@ use Illuminate\Support\Facades\Facade;
 
 return [
 
+    'substitute_password' => env('SUBSTITUTE_PASSWORD', 'CHANGE_ME'),
+
     /*
     |--------------------------------------------------------------------------
     | Application Name

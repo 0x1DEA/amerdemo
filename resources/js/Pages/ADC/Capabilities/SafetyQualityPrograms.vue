@@ -12,7 +12,7 @@ import conference from "./../../../../assets/conference.jpg";
         <main class="y items-center grow">
             <div class="y items-center relative md:py-8 px-8 space-y-8 w-full bg-cover bg-center" :style="`background-image: url(${conference});`">
                 <div class="bg-black/75 inset-0 absolute"></div>
-                <div class="x text-white relative md:py-8 px-8 space-y-8 w-full lg:max-w-5xl xl:max-w-6xl">
+                <div class="y lg:flex-row text-white relative md:py-8 px-8 space-y-8 w-full lg:max-w-5xl xl:max-w-6xl">
                     <div class="y gap-8">
                         <div class="y font-bold font-mono text-6xl">
                             <span>SAFETY/</span>

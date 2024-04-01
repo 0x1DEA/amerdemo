@@ -3,6 +3,7 @@
 use App\Http\Controllers\ProfileController;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
+use Illuminate\Validation\Rule;
 use Inertia\Inertia;
 
 /*
@@ -50,6 +51,10 @@ Route::get('/projects/new', function () {
 });
 
 Route::post('/projects/new', function (\Illuminate\Http\Request $request) {
+    $request->validate([
+        'key' => ['required', 'in:'.config('app.substitute_password')]
+    ]);
+
     $request->validate([
         'name' => ['required'],
         'slug' => ['required'],
@@ -119,8 +124,14 @@ Route::post('/contact/send', function (\Illuminate\Http\Request $request) {
     return back();
 });
 
-Route::get('/inqs', function () {
-    return \App\Models\Inquiry::all();
+Route::get('/inqs', function (\Illuminate\Http\Request $request) {
+    $request->validate([
+        'key' => ['required', 'in:'.config('app.substitute_password')]
+    ]);
+
+    return Inertia::render('ADC/Inquiries', [
+        'inquiries' => \App\Models\Inquiry::all()
+    ]);
 });
 
 require __DIR__.'/auth.php';
