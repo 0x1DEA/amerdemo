@@ -9,8 +9,8 @@ const open = ref(false);
 </script>
 <template>
     <div class="y rounded bg-pt-6197">
-        <div class="x justify-between items-center p-2">
-            <div class="x items-center space-x-4">
+        <div class="y md:flex-row justify-between items-center gap-4 p-2">
+            <div class="y md:flex-row items-center gap-2 md:gap-4">
                 <span class="text-sm font-mono opacity-50">{{ inq.id }}</span>
                 <span>{{ inq.name }}</span>
                 <div class="x items-center">
@@ -27,7 +27,7 @@ const open = ref(false);
                     <span>{{ inq.email }}</span>
                 </div>
             </div>
-            <div>
+            <div class="w-full md:w-fit text-center">
                 <div @click="open = !open" class="cursor-pointer rounded bg-pt-6200 px-2 py-1">{{ open ? 'Close' : 'Read' }}</div>
             </div>
         </div>
